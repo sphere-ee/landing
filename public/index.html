@@ -3,12 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Sphere</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css">
-	<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
-  <script src="js/director.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Director/1.2.8/director.min.js"></script>
 	<script src="js/main.js" type="text/javascript"></script>
 </head>
 <body>
@@ -56,7 +57,13 @@
 			<a class="deco-none" href="#/home">
 				<img src="img/img-logo-shere.svg" class="img-logo-shere">
 			</a>
-			<div>
+			<div class="mobile-menu-btn" id="mob-btn">
+				<img src="img/ic-hamburger-menu.svg"
+     				 class="ic_hamburger_menu">
+				<img src="img/ic-close-menu.svg"
+		      class="ic_close_menu">
+			</div>
+			<div class="header-nav">
 				<span class="link-btn">
 					<a class="deco-none" href="#/network"><span>network</span></a>
 				</span>
@@ -77,25 +84,30 @@
 				</span>
 			</div>
 		</div>
-	
+
 	<section id="home">
+		<div class="mobile-content mobile-home-content">
+			<img class="sphere-img"
+						src="img/img-sphere-blue-mobile.png"
+						srcset="img/img-sphere-blue-mobile@2x.png 2x, img/img-sphere-blue-mobile@3x.png 3x">
+		</div>
 		<div class="container-fluid fill b-i">
 	  	<div class="row no-gutters fill">
 				<div class="col-12">
 						<div class="half half-top">
 						</div>
-						<div class="half half-bottom info">
+						<div class="half half-bottom info info-home">
 							<h2 class="text-bold text-bold-l">
 								<div class="point pulse"></div>
-								Advanced enterprise <br /> solutions ecosystem
+								Advanced enterprise solutions ecosystem
 							</h2>
-							<p class="col-10 text-regular">
+							<p class="col-md-10 col-sm-12 text-regular">
 							<strong>Sphere Network.</strong> Next-generation decentralized fintech tool.
 							<br />
 							<strong>Sphere Token (SPH).</strong> Personalized investment gold backed token.
 							<br />
 							<strong>Sphere Platform.</strong> The marketplace for digital commodities management.
-							<br /> 
+							<br />
 							</p>
 					</div>
 				</div>
@@ -120,20 +132,26 @@
 
 
 	<section id="network">
+		<div class="mobile-content mobile-content-second">
+			<img src="img/img-mob-network.png"
+     			 srcset="img/img-mob-network@2x.png 2x,
+             			 img/img-mob-network@3x.png 3x"
+     			 class="img_mob_network">
+		</div>
 		<div class="container-fluid fill b-i">
 	  	<div class="row no-gutters fill">
 				<div class="col-12">
 						<div class="half half-top">
 						</div>
-						<div class="half half-bottom info">
+						<div class="half half-bottom info info-network">
 							<h2 class="text-bold">
 								<div class="point pulse"></div>
 								Network
 							</h2>
-							<p class="col-10 text-regular">
+							<p class="col-md-10 col-sm-12 text-regular">
 								Sphere is an innovative decentralized network for smart-contracts execution and digital commodities management. It ensures immediate transaction processing, high scalability, network synchronisation and resilience, and eliminates the need of mining.
 							</p>
-							
+
 							<a class="learn-more" target="_blank" href="wp/sphere_tech_wp.pdf">LEARN MORE</a>
 						</div>
 				</div>
@@ -143,29 +161,35 @@
 				<div class="half half-bottom">
 					<img src="img/ark-network-left-top.svg"
 							 class="ark_network_left_top">
-					
+
 					<img src="img/ark-network-right-top.svg"
 							 class="ark_network_right_top">
-				
+
 				</div>
 
 				<div class="half half-top">
-					
+
 					<img src="img/ark-network-right-bot.svg"
 							 class="ark_network_right_bot">
-				
+
 				</div>
-				
+
 				<img src="img/img-network.png"
 						 srcset="img/img-network@2x.png 2x,
              img/img-network@3x.png 3x"
 						 class="img_network">
-				
-				
+
+
 		</div>
 	</section>
-	
+
 	<section id="token">
+		<div class="mobile-content mobile-content-second">
+			<img src="img/img-mob-token.png"
+     			 srcset="img/img-mob-token@2x.png 2x,
+             			 img/img-mob-token@3x.png 3x"
+     			 class="img_mob_token">
+		</div>
 		<div class="container-fluid fill b-i">
 	  	<div class="row no-gutters fill">
 				<div class="col-12">
@@ -176,10 +200,10 @@
 								<div class="point pulse"></div>
 								Token
 							</h2>
-							<p class="col-10 text-regular">
+							<p class="text-regular col-md-10 col-sm-12">
 								Sphere token (SPH) is a personalized investment gold backed token fixed by investment gold price on LBMA (London Bullion Market Association) or ETF gold.
 							</p>
-							
+
 							<a class="learn-more" target="_blank" href="wp/sphere_legal_wp_en.pdf">LEARN MORE</a>
 						</div>
 				</div>
@@ -191,13 +215,19 @@
 
 				<div class="half half-top">
 				</div>
-				
+
 				<img src="img/img-token.svg"
 						 class="img_token">
 			</div>
 	</section>
 
 	<section id="platform">
+		<div class="mobile-content mobile-content-second">
+			<img src="img/img-mob-platform.png"
+	     		 srcset="img/img-mob-platform@2x.png 2x,
+	             img/img-mob-platform@3x.png 3x"
+	     		 class="img_mob_platform">
+		</div>
 		<div class="container-fluid fill b-i">
 	  	<div class="row no-gutters fill">
 				<div class="col-12">
@@ -208,13 +238,13 @@
 								<div class="point pulse"></div>
 								Platform
 							</h2>
-							<p class="col-10 text-regular">
+							<p class="text-regular col-md-10 col-sm-12">
 								Sphere Platform is a free public application, the marketplace digital commodities management, e.g. buying, selling, crowdfunding, etc.
 								Client can both set any kind of service or good for sale or to buy it.
 							</p>
-							
+
 							<a class="learn-more" target="_blank" href="wp/sphere_legal_wp_en.pdf">LEARN MORE</a>
-						
+
 						</div>
 				</div>
 			</div>
@@ -223,26 +253,32 @@
 				<div class="half half-bottom">
 					<img src="img/ark-network-left-top.svg"
 							 class="ark_network_left_top">
-					
+
 				</div>
-				
+
 				<div class="half half-top">
-					
+
 					<img src="img/ark-network-right-bot.svg"
 							 class="ark_network_right_bot">
-				
+
 				</div>
-				
+
 				<img src="img/img-platform.png"
 						 srcset="img/img-platform@2x.png 2x,
              img/img-platform@3x.png 3x"
 						 class="img_platform">
-			
+
 			</div>
 	</section>
 
 
 	<section id="e-residence">
+		<div class="mobile-content mobile-content-second">
+			<img src="img/img-map.png"
+					 srcset="img/img-map@2x.png 2x,
+					 img/img-map@3x.png 3x"
+					 class="img_map">
+		</div>
 		<div class="container-fluid fill b-i">
 	  	<div class="row no-gutters fill">
 				<div class="col-12">
@@ -253,7 +289,7 @@
 								<div class="point pulse"></div>
 								E-residency
 							</h2>
-							<p class="col-10 text-regular">
+							<p class="text-regular col-md-10 col-sm-12">
 								Transnational digital identity provided by Estonian government
 								available to anyone in the world.
 							</p>
@@ -271,24 +307,24 @@
 				<div class="half half-bottom">
 					<img src="img/ark-network-left-top.svg"
 							 class="ark_network_left_top">
-					
+
 					<img src="img/ark-residency-right-top.svg"
 							 class="ark_residency_right_top">
-				
+
 				</div>
 
 				<div class="half half-top">
-					
+
 					<img src="img/ark-network-right-bot.svg"
 							 class="ark_network_right_bot">
-				
+
 				</div>
-				
+
 				<img src="img/img-map.png"
 						 srcset="img/img-map@2x.png 2x,
              img/img-map@3x.png 3x"
 						 class="img_map">
-				
+
 			</div>
 	</section>
 
@@ -301,37 +337,39 @@
 							<div class="point pulse"></div>
 							Join now
 						</h2>
-						<p class="col-10 text-regular">
+						<p class="col-md-10 col-sm-12 text-regular">
 							Become Sphere's early stage investor.
 						</p>
 						<div class="join-step">
 							<a target="_blank" href="https://apply.gov.ee/">
 								<div>
 									<p class="step-text">Step 1</p>
-									<p class="step-text-bold">Apply <br/> for E-residency</p>
+									<p class="step-text-bold">Apply  for E-residency</p>
 								</div>
 							</a>
-							
+							<img src="img/ic-mob-next-step.svg"
+     							 class="ic_mob_next_step">
 							<img src="img/ic-next-step.svg"
 									 class="ic_next_step">
-							
+
 							<a href="mailto:ico@sphere.ee?subject=SPH Tokens Share Investment">
 								<div>
 									<p class="step-text">Step 2</p>
-									<p class="step-text-bold">Buy <br/>Token SPH</p>
+									<p class="step-text-bold">Buy Token SPH</p>
 								</div>
 							</a>
-							
+							<img src="img/ic-mob-next-step.svg"
+     							 class="ic_mob_next_step">
 							<img src="img/ic-next-step.svg"
 									 class="ic_next_step">
-							
+
 							<a href="mailto:ico@sphere.ee?subject=Requesting Investors Login">
 								<div>
 									<p class="step-text">Step 3</p>
-									<p class="step-text-bold">Become <br/> a Partner</p>
+									<p class="step-text-bold">Become a Partner</p>
 								</div>
 							</a>
-							
+
 						</div>
 					</div>
 				</div>
@@ -350,18 +388,18 @@
 							</h2>
 						</div>
 						<div class="half half-bottom info row no-gutters fill">
-							<div class="docs-list col-5">
+							<div class="docs-list col-md-5 col-sm-12">
 								<a href="wp/aml.docx">Rules</a>
 								<a href="wp/tac.docx">Terms & Conditions</a>
 								<a href="wp/refund_policy.docx">Refund Policy</a>
 								<a href="wp/privacy_policy.docx">Privacy Policy</a>
 							</div>
-							<div class="docs-list col-5">
+							<div class="docs-list col-md-5 col-sm-12">
 								<a href="wp/sphere_legal_wp_en.pdf">Legal Whitepaper (EN)</a>
 								<a href="wp/sphere_legal_wp_rus.pdf">Legal Whitepaper (RU)</a>
 								<a href="wp/sphere_tech_wp.pdf">Technical Whitepaper</a>
 							</div>
-						
+
 						</div>
 				</div>
 			</div>
@@ -370,25 +408,23 @@
 			<div class="half half-bottom">
 				<img src="img/ark-network-left-top.svg"
 						 class="ark_network_left_top">
-			
 			</div>
-			
 			<div class="half half-top">
-				
 				<img src="img/ark-network-right-bot.svg"
 						 class="ark_network_right_bot">
-				
-				
-						<div class="copyright">
+				<div class="copyright">
 							<span class="footer">© ECLAT CAPITAL OÜ</span>
 							<span class="email">ico@sphere.ee</span>
-						</div>
-				
-							
-							</div>
-							
-						</div>
-					</section>
-					</div>
-				</body>
-				</html>
+				</div>
+			</div>
+		 </div>
+		 <div class="mobile-copyright">
+			 <div class="copyright">
+						 <span class="footer">© ECLAT CAPITAL OÜ</span>
+						 <span class="email">ico@sphere.ee</span>
+			 </div>
+		 </div>
+	</section>
+</div>
+</body>
+</html>

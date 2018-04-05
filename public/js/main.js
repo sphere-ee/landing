@@ -1,7 +1,5 @@
 $('document').ready(function() {
-
     console.log('test gc')
-
     function show(word) {
         return function() {
             console.log(word)
@@ -12,6 +10,14 @@ $('document').ready(function() {
                 .css("display", "flex")
                 .hide()
                 .fadeIn(500)
+
+            if($(window).width() <= 768){
+              var top = $(section).offset().top - 100
+              $('body,html').animate({scrollTop: top}, 1500)
+              $('.header-nav').fadeOut()
+              $('.ic_hamburger_menu').show()
+              $('.ic_close_menu').hide()
+            }
         }
     }
 
@@ -66,6 +72,36 @@ $('document').ready(function() {
 
     $(window).on('scroll', function() {
         console.log('scroll Fired');
+    });
+
+    function toggleMenu(){
+        var MobilMenu = $('.header-nav'),
+            ToggleBtn = $('#mob-btn'),
+            ImgToggle = $('.ic_hamburger_menu'),
+            ImgClose  = $('.ic_close_menu');
+        if(MobilMenu.is(':visible')){
+          ImgToggle.hide()
+          ImgClose.show()
+        }else{
+          ImgToggle.show()
+          ImgClose.hide()
+        }
+    }
+
+
+    $('#mob-btn').click(function() {
+      $('.header-nav').toggle(toggleMenu());
+      toggleMenu();
+    });
+
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 1){
+        $('.header').addClass("header-fixed");
+      }
+      else{
+        $('.header').removeClass("header-fixed");
+      }
     });
 
 });
