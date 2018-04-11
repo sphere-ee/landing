@@ -222,3 +222,30 @@
     display: block;
   }
 }
+@media only screen and (max-width: 375px){
+  .content{
+    width: 320px;
+    overflow-x: hidden;
+  }
+  .header{
+    width: 320px;
+  }
+  .mobile-home-content:before{
+    width: 320px;
+    height: 320px;
+  }
+  .mobile-home-content:after{
+    width: 280px;
+    height: 280px;
+    margin-left: 20px;
+  }
+  .mobile-content-second img{
+    max-width: 310px;
+  }
+  .header .header-nav{
+    width: 320px;
+  }
+  .join-step img{
+    width: 320px;
+  }
+}
