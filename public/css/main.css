@@ -296,8 +296,8 @@ a.learn-more {
       letter-spacing: 0.1px; }
 
 @media only screen and (max-width: 768px) {
-  .header-fixed {
-    position: fixed !important; }
+  body {
+    overflow-x: hidden; }
   #home {
     padding-top: 60px; }
   .header {
@@ -363,7 +363,6 @@ a.learn-more {
   .content {
     width: 375px;
     margin: 0 auto;
-    overflow-x: hidden;
     height: auto;
     display: block; }
     .content section {
@@ -470,8 +469,7 @@ a.learn-more {
 
 @media only screen and (max-width: 375px) {
   .content {
-    width: 320px;
-    overflow-x: hidden; }
+    width: 320px; }
   .header {
     width: 320px; }
   .mobile-home-content:before {
@@ -486,4 +484,6 @@ a.learn-more {
   .header .header-nav {
     width: 320px; }
   .join-step img {
-    width: 320px; } }
+    width: 300px; }
+  .info-top .text-regular {
+    margin-left: 0px; } }

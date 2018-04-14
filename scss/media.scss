@@ -1,6 +1,6 @@
 @media only screen and (max-width: 768px){
-  .header-fixed{
-    position: fixed !important;
+  body{
+    overflow-x: hidden;
   }
   #home{
     padding-top: 60px;
@@ -78,7 +78,7 @@
   .content{
     width: 375px;
     margin: 0 auto;
-    overflow-x: hidden;
+    
     height: auto;
     display: block;
     section{
@@ -225,7 +225,7 @@
 @media only screen and (max-width: 375px){
   .content{
     width: 320px;
-    overflow-x: hidden;
+    
   }
   .header{
     width: 320px;
@@ -246,6 +246,9 @@
     width: 320px;
   }
   .join-step img{
-    width: 320px;
+    width: 300px;
+  }
+  .info-top .text-regular{
+    margin-left: 0px;
   }
 }
