@@ -467,13 +467,7 @@ a.learn-more {
   .sidenav {
     display: none; }
   .join-step {
-    display: block; } }
-
-@media only screen and (max-width: 768px) {
-  .content {
-    width: 100%; }
-  .header {
-    width: 100%; }
+    display: block; }
   .mobile-content-second img {
     max-width: 310px; }
   .header .header-nav {
@@ -482,3 +476,18 @@ a.learn-more {
     width: 300px; }
   .info-top .text-regular {
     margin-left: 0px; } }
+
+@media only screen and (max-width: 375px) {
+  .content {
+    width: 100%; }
+  .header {
+    width: 100%; }
+  .mobile-home-content {
+    width: 320px; }
+  .mobile-home-content:before {
+    width: 320px;
+    height: 320px; }
+  .mobile-home-content:after {
+    width: 280px;
+    height: 280px;
+    margin-left: 20px; } }
